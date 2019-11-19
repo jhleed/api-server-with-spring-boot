@@ -16,4 +16,8 @@ public class PostService {
         Optional<Post> post = repository.findById(id);
         return post.get();
     }
+
+    public void save(Post entity) {
+        repository.save(entity);
+    }
 }
